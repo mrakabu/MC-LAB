@@ -1,0 +1,15 @@
+1) Using Keil software, observe the various Registers, Dump, CPSR, with a simple 
+Assembly Language Programs (ALP).
+
+AREA reg, CODE, READONLY 
+ENTRY
+MOV R0,#0x000056 ;               
+MOV R1,#0x000089 ;              
+LDR R5,=DATA ;                   
+LDRH R3, [R5] ;                 
+LDRH R4, [R5,#2] ;               
+MRS R6, CPSR ;                    
+STOP B STOP
+DATA DCW 0X1234,0x6789 ;             
+END
+
