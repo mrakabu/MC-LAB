@@ -1,0 +1,11 @@
+8. Simulate a program in C for ARM microcontroller to find factorial of a number.
+
+#include <lpc214x.h> 
+int main()
+{
+volatile int n, I,fact =1;
+n=5; //initialize the number
+for (i = 1; i <= n; ++i)
+ // factorial of the number
+while(1);
+}
